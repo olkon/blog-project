@@ -20,7 +20,6 @@ class ArticlesController < ApplicationController
     else
       render "new"
     end
-    
   end
   
   def update
@@ -32,18 +31,21 @@ class ArticlesController < ApplicationController
       render 'edit'
     end
   end
-  
-  
   def show
     @article = Article.find(params[:id])
   end
   
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    
+    flash[:notice] = "Article deleted successfully!"
+    redirect_to articles_path
+  end
   
   private
   def article_params
     params.require(:article).permit(:title, :description)
   end
-  
-  
   
 end

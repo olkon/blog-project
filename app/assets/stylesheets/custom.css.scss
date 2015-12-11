@@ -21,6 +21,10 @@ $navbar-default-bg: #bfff00;
   text-align: right;
 }
 
+.center {
+  text-align: center;
+}
+
 .jumbotron {
   background-image: asset-url('blogpic.jpg');
   background-size: cover;
@@ -29,6 +33,8 @@ $navbar-default-bg: #bfff00;
 
 .jumbotron h1 {
   color: #8c8c8c;
+  text-align: center;
+  margin-bottom: 30px;
   letter-spacing: -1px;
   font-weight: bold;
 }
@@ -36,6 +42,26 @@ $navbar-default-bg: #bfff00;
 .btn-xlarge {
   font-size: 1.7em;
   background-color: #8c8c8c;
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.description {
+  margin-top: 0;
 }
 
 .footer {

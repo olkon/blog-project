@@ -1,5 +1,7 @@
 <div class="right jumbotron">
   <h1>OK BLOG</h1>
   <h4>just do it already</h4>
-  <%= link_to "Sign up", "#", class: "btn btn-primary btn-xlarge"%>
+  <% if !logged_in? %>
+  <%= link_to "Sign up", signup_path, class: "btn btn-primary btn-xlarge"%>
+  <% end %>
 </div>

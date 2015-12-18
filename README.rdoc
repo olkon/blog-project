@@ -1,3 +1,21 @@
-== BLOG-PROJECT
+# BLOG-PROJECT
 
-First Ruby on Rails learning project. It's a blog.
+First learning project for a Udemy RoR developer course. It's a blog. 
+
+### Objectives
+* Achieving Basic & Intermediate Ruby & Rails know-how (starting from nil)
+* Developing an understanding of RoR conventions and its generic web app architecture
+* Improving my rather shoddy Bootstrap/CSS kung fu
+* Learning web development with minimized code redundancy
+* Familiarizing myself with the TDD process of (web) development
+* Getting to know the C9 (cloud) IDE, Github and Heroku for development, version control and production respectively
+
+### Features
+* A blog publishing platform where users can release blog articles of different categories
+* Articles can be indexed by time, author or category
+* Pagination to limit index results per page
+* CRUD functionalities for user, blog article and blog category models
+* Limiting site functions & visibility according to unregistered/user/admin status
+* Show debug data in development
+* Runs SQLite on C9 and Postgres on Heroku
+* Exterior uses Bootstrap with some custom CSS

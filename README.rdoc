@@ -1,8 +1,8 @@
-# BLOG-PROJECT
+== BLOG-PROJECT
 
 First learning project for a Udemy RoR developer course. It's a blog. 
 
-### Objectives
+=== Objectives
 * Achieving Basic & Intermediate Ruby & Rails know-how (starting from nil)
 * Developing an understanding of RoR conventions and its generic web app architecture
 * Improving my rather shoddy Bootstrap/CSS kung fu
@@ -10,7 +10,7 @@ First learning project for a Udemy RoR developer course. It's a blog.
 * Familiarizing myself with the TDD process of (web) development
 * Getting to know the C9 (cloud) IDE, Github and Heroku for development, version control and production respectively
 
-### Features
+===Features
 * A blog publishing platform where users can release blog articles of different categories
 * Articles can be indexed by time, author or category
 * Pagination to limit index results per page

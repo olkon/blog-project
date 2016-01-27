@@ -6,11 +6,11 @@
           <%= link_to a.title, article_path(a) %>
         </div>
         <div class="article-body">
-          <%= truncate(a.description, length: 100) %>
+          <i><%= truncate(a.description.gsub(/(<[^>]+>)/, ''), length: 100, omission: "...") %></i>
           <div class="article-meta-details">
             <small>Created by: <%= a.user.username if a.user %>,
-                  <% time_ago_in_words(a.created_at) %> ago,
-                  last updated: <% time_ago_in_words(a.updated_at) %> ago </small>
+                  <%= time_ago_in_words(a.created_at) %> ago,
+                  last updated: <%= time_ago_in_words(a.updated_at) %> ago </small>
           </div>
         </div>
         <% if a.categories.any? %>

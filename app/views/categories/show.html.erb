@@ -1,4 +1,4 @@
-<h1 align="center"><%= "Category: " + @category.name %></h1>
+<h1 align="center"><%= "Category: " + @category.name.titleize %></h1>
 
 <div align="center">
   <% if logged_in? and current_user.admin? %>
